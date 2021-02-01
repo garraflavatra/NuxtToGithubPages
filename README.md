@@ -1,5 +1,5 @@
 # Build Vue and deploy it to Github Pages 🚀
-This Action will Build your Vue Project and deploy it to Github Pages
+This Action will Build your Nuxt Project, Generate Static files and deploy it to Github Pages. It is based on xRealNeon/VuePagesAction
 
 ## Getting Started 🎉
 1. Create the `vue.config.js` file
@@ -20,7 +20,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - id: Build-Vue
-      uses: ashkantaravati/VuePagesAction@1.0.0
+      uses: ashkantaravati/VuePagesAction@latest
       with:
         username: 'YourGithubName'
         reponame: 'YourRepoName'
