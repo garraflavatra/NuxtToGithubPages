@@ -32,10 +32,11 @@ inputs:
 runs:
   using: "composite"
   steps:
-      - name: Build Vue
+      - name: Build and generate nuxt
         run: |
               npm ci
               npm run build
+              npm run generate
               cd dist
               if [ "none" !=  ${{ inputs.cname }} ]; then echo '${{ inputs.cname }}' > CNAME; fi
               git config --global user.email "${{ inputs.gitemail }}"
