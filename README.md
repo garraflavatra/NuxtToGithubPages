@@ -20,7 +20,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - id: Build-Vue
-      uses: ashkantaravati/VuePagesAction@latest
+      uses: ashkantaravati/NuxtToGithubPages@latest
       with:
         username: 'YourGithubName'
         reponame: 'YourRepoName'
