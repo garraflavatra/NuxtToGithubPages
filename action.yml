@@ -2,7 +2,7 @@ name: 'Nuxt to Github Pages'
 branding:
   icon: 'activity'  
   color: 'blue'
-description: 'This Action will Build your Vue Project and deploy it to Github Pages'
+description: 'This Action will generate your static nuxt website and deploy it to Github Pages'
 inputs:
   username:
     description: 'Your username'
