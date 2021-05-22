@@ -20,7 +20,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - id: Build-Vue
-      uses: garraflavatra/nuxt-gh-pages-yarn@v1.0
+      uses: garraflavatra/nuxt-gh-pages-yarn@v1.1.1
       with:
         username: 'YourGithubName'
         reponame: 'YourRepoName'
