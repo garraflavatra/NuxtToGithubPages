@@ -11,16 +11,16 @@ module.exports = {
 ```
 3. Create a Github Actions Workflow file and add this to it (and replace "YourGithubName" and "YourRepoName" with the names)
 ```yml
-name: Build Vue
+name: Publish Nuxt app to GH Pages
 on: [push]
 jobs:
   build_vue:
     runs-on: ubuntu-latest
-    name: Build Vue
+    name: Build Nuxt app
     steps:
     - uses: actions/checkout@v2
     - id: Build-Vue
-      uses: ashkantaravati/NuxtToGithubPages@v1.0
+      uses: garraflavatra/nuxt-gh-pages-yarn@v1.0
       with:
         username: 'YourGithubName'
         reponame: 'YourRepoName'
