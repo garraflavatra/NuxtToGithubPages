@@ -1,20 +1,22 @@
-name: 'Nuxt to Github Pages'
+name: 'Nuxt.js with Yarn to Github Pages'
+description: 'Build a Nuxt.js project using Yarn and deploy it to GitHub Pages in the `gh-pages` branch.'
+
 branding:
-  icon: 'activity'  
+  icon: 'activity'
   color: 'blue'
-description: 'This Action will generate your static nuxt website and deploy it to Github Pages'
+
 inputs:
   username:
-    description: 'Your username'
+    description: 'Your username on GitHub'
     required: true
   reponame:
-    description: 'Your reponame'
+    description: 'Your repository name'
     required: true
   token:
-    description: 'Your Github token'
+    description: 'Your GitHub token'
     required: true
   gitemail:
-    description: 'Your git commit email'
+    description: 'Your Git commit email'
     required: false
     default: 'CI@example.com'
   gitname:
@@ -26,7 +28,7 @@ inputs:
     required: false
     default: 'deploy'
   cname:
-    description: 'Your custom domain'
+    description: 'Your custom GitHub Pages domain'
     required: false
     default: 'none'
 runs:
